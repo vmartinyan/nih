@@ -2919,7 +2919,8 @@ body{
 }
 .main-nav .main-menu > li:hover  > a,
 .main-nav .main-menu > li.current-menu-item > a{
-    background: #4d90fe;
+    /* background: #4d90fe; */
+	background: #1E61AF;
     color: #fff;
     transition: all 0.3s ease-out 0s;
     -webkit-transition: all 0.3s ease-out 0s;

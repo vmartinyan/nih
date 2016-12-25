@@ -245,7 +245,8 @@ blockquote {
     color:#fff;
 }
 .main-nav {
-    background: #262626 none repeat scroll 0 0;
+    /* background: #262626 none repeat scroll 0 0; */
+	background: #5f5f5f none repeat scroll 0 0;
     position: relative;
     z-index: 999;
 }
@@ -9756,10 +9757,23 @@ body.home4{
 }
 .event-top-menu.top-menu4 a:hover {
     background: #4d90fe none repeat scroll 0 0;
-}
+} 
 .event-top-social.top-social4 a:hover {
-    background: #4d90fe none repeat scroll 0 0;
+	/*background: #4d90fe none repeat scroll 0 0; */
+    background: #1E61AF none repeat scroll 0 0;
 }
+
+.event-top-social.top-social4 a[href*="facebook"]:hover {
+    background: #3B5998 none repeat scroll 0 0;
+}
+.event-top-social.top-social4 a[href*="twitter"]:hover {
+    background: #55ACEE none repeat scroll 0 0;
+}
+.event-top-social.top-social4 a[href*="youtube"]:hover {
+    background: #E62117 none repeat scroll 0 0;
+}
+
+
 .event-top-search .event-btn-search.btn-search4:hover {
     background: #4d90fe none repeat scroll 0 0;
 }
