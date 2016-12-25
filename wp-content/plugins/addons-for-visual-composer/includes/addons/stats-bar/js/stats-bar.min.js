@@ -1,0 +1,1 @@
+jQuery(function(t){t(".lvca-stats-bars").waypoint(function(a){t(this).find(".lvca-stats-bar-content").each(function(){var a=t(this).attr("data-perc");t(this).animate({width:a+"%"},20*a)})},{offset:t.waypoints("viewportHeight")-150,triggerOnce:!0})});

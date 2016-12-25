@@ -1,0 +1,1 @@
+jQuery(function(t){t(".lvca-odometers").waypoint(function(e){t(this).find(".lvca-odometer .lvca-number").each(function(){var e=t(this);setTimeout(function(){var o=e.attr("data-stop");t(e).text(o)},100)})},{offset:t.waypoints("viewportHeight")-100,triggerOnce:!0})});

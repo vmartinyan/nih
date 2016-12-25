@@ -1,0 +1,109 @@
+
+@import "../../../../assets/css/lvca-lib";
+
+.lvca-clients {
+  overflow: hidden;
+  margin: 0 auto;
+  .lvca-client {
+    position: relative;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    .lvca-dark-bg & {
+      border-color: #505050 !important;
+    }
+    &.lvca-twocol:nth-child(6n + 1) {
+      border-left: 1px solid #ddd;
+      }
+    &.lvca-twocol:nth-child(-n + 6) {
+      border-top: 1px solid #ddd;
+      }
+    &.lvca-onefifthcol:nth-child(5n + 1) {
+      border-left: 1px solid #ddd;
+      }
+    &.lvca-onefifthcol:nth-child(-n + 5) {
+      border-top: 1px solid #ddd;
+      }
+    &.lvca-threecol:nth-child(4n + 1) {
+      border-left: 1px solid #ddd;
+      }
+    &.lvca-threecol:nth-child(-n + 4) {
+      border-top: 1px solid #ddd;
+      }
+    &.lvca-fourcol:nth-child(3n + 1) {
+      border-left: 1px solid #ddd;
+      }
+    &.lvca-fourcol:nth-child(-n + 3) {
+      border-top: 1px solid #ddd;
+      }
+    &.lvca-sixcol:nth-child(2n + 1) {
+      border-left: 1px solid #ddd;
+      }
+    &.lvca-sixcol:nth-child(-n + 2) {
+      border-top: 1px solid #ddd;
+      }
+    @include respond-to-max(800) {
+      &.lvca-twocol:nth-child(n), &.lvca-threecol:nth-child(n), &.lvca-fourcol:nth-child(n), &.lvca-onefifthcol:nth-child(n), &.lvca-sixcol:nth-child(n) {
+        border-left: none;
+        border-top: none;        
+        width: 50%;
+        float: left;
+      }
+      &.lvca-twocol:nth-child(2n + 1), &.lvca-threecol:nth-child(2n + 1), &.lvca-fourcol:nth-child(2n + 1), &.lvca-onefifthcol:nth-child(2n + 1), &.lvca-sixcol:nth-child(2n + 1) {
+        border-left: 1px solid #ddd;
+      }
+      &.lvca-twocol:nth-child(-n + 2), &.lvca-threecol:nth-child(-n + 2), &.lvca-fourcol:nth-child(-n + 2), &.lvca-onefifthcol:nth-child(-n + 2), &.lvca-sixcol:nth-child(-n + 2) {
+        border-top: 1px solid #ddd;
+      }
+    }
+    img {
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      -moz-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+      width: 100%;
+      margin: 0;
+      }
+    .lvca-client-name {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      margin-top: -12px;
+      color: #fff;
+      font-size: 18px;
+      line-height: 26px;
+      @include lvca-transition(opacity);
+      opacity: 0;
+      a {
+        color: #fff;
+        text-decoration: none;
+        }
+      }
+    .lvca-image-overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      filter: alpha(opacity = 0);
+      -moz-opacity: 0;
+      opacity: 0;
+      @include lvca-transition(opacity);
+      }
+      &:hover {
+        .lvca-image-overlay {
+          opacity: 0.7;
+          .lvca-dark-bg & {
+              opacity: 0.8;
+            }
+          }
+        .lvca-client-name {
+          opacity: 1;
+          }
+        }
+    }
+  }

@@ -1,0 +1,1 @@
+jQuery(function(a){a(".lvca-piecharts").waypoint(function(t){a(this).find(".lvca-piechart .lvca-percentage").each(function(){var t=a(this).data("track-color"),e=a(this).data("bar-color");a(this).easyPieChart({animate:2e3,lineWidth:5,barColor:e,trackColor:t,scaleColor:!1,lineCap:"square",size:220})})},{offset:a.waypoints("viewportHeight")-100,triggerOnce:!0})});

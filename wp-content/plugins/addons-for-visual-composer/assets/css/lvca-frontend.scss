@@ -1,0 +1,429 @@
+@import "bourbon";
+@import "neat";
+@import "flexbox";
+@import "grid-settings";
+@import "lvca-lib";
+
+/* --------------- Reset styles --------- */
+
+.panel-grid .widget {
+  overflow: initial;
+  }
+.lvca-container {
+  ol, ul, ol li, ul li, ol:hover, ul:hover, ul li:hover, ol li:hover, ol li a, ul li a, ol li a:hover, ul li a:hover, img {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    list-style: none;
+    background: none;
+    &:before, &:after {
+      display: none;
+      }
+    }
+  a {
+    text-decoration: initial;
+    }
+  img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    }
+  }
+/* ------- General styles ------------ */
+
+.lvca-container {
+  margin-left: auto;
+  margin-right: auto;
+  }
+.panel-grid .widget {
+  border: 0;
+  }
+.lvca-center {
+  text-align: center;
+  }
+.lvca-lastcol {
+  @include omega;
+  }
+.lvca-container {
+  .lvca-onecol, .lvca-twocol, .lvca-onefifthcol, .lvca-threecol, .lvca-fourcol, .lvca-fivecol, .lvca-sixcol, .lvca-sevencol, .lvca-eightcol, .lvca-ninecol, .lvca-tencol, .lvca-elevencol {
+    min-height: 1px; /* Prevents columns from collapsing when housing absolute elements or when lazy loading content */
+    }
+
+  @include respond-to-min(801) {
+
+    .lvca-onecol {
+      @include span-columns(1);
+      @include omega(12n);
+      }
+
+    .lvca-twocol {
+      @include span-columns(2);
+      @include omega(6n);
+      }
+
+    .lvca-threecol {
+      @include span-columns(3);
+      @include omega(4n);
+      }
+
+    .lvca-fourcol {
+      @include span-columns(4);
+      @include omega(3n);
+      }
+
+    .lvca-fivecol {
+      @include span-columns(5);
+      }
+
+    .lvca-sixcol {
+      @include span-columns(6);
+      @include omega(2n);
+      }
+
+    .lvca-sevencol {
+      @include span-columns(7);
+      }
+
+    .lvca-eightcol {
+      @include span-columns(8);
+      }
+
+    .lvca-ninecol {
+      @include span-columns(9);
+      }
+
+    .lvca-tencol {
+      @include span-columns(10);
+      }
+
+    .lvca-elevencol {
+      @include span-columns(11);
+      }
+    }
+
+  .lvca-twelvecol, .lvca-fullwidth {
+    float: left;
+    display: block;
+    width: 100%;
+    }
+
+  }
+/*--------- Support for 5 column grid ----*/
+
+$grid-columns: 15;
+
+.lvca-container {
+  @include respond-to-min(801) {
+
+    .lvca-onefifthcol {
+      @include span-columns(3);
+      @include omega(5n);
+      }
+
+    }
+  }
+/* Tablet and Mobile responsiveness */
+
+$grid-columns: 12;
+
+.lvca-container {
+
+  @include respond-between(480, 800) {
+
+    .lvca-onecol, .lvca-twocol, .lvca-onefifthcol, .lvca-threecol, .lvca-fourcol, .lvca-fivecol, .lvca-sixcol, .lvca-sevencol, .lvca-eightcol, .lvca-ninecol, .lvca-tencol, .lvca-elevencol {
+      @include span-columns(6);
+      @include omega(2n);
+      }
+
+    }
+
+  @include respond-to-max(479) {
+
+    .lvca-onecol, .lvca-twocol, .lvca-onefifthcol, .lvca-threecol, .lvca-fourcol, .lvca-fivecol, .lvca-sixcol, .lvca-sevencol, .lvca-eightcol, .lvca-ninecol, .lvca-tencol, .lvca-elevencol {
+      width: 100%;
+      @include omega;
+      }
+
+    }
+  }
+/*-------- Remove margins on last column -----*/
+
+.lvca-container .lvca-lastcol {
+  @include omega;
+  }
+/*--------- No margin columns ----*/
+
+.lvca-container .lvca-zero-margin, #content .lvca-zero-margin {
+  @include omega;
+  }
+.lvca-container {
+
+  .lvca-onecol.lvca-zero-margin, .lvca-twocol.lvca-zero-margin, .lvca-onefifthcol.lvca-zero-margin, .lvca-threecol.lvca-zero-margin, .lvca-fourcol.lvca-zero-margin, .lvca-fivecol.lvca-zero-margin, .lvca-sixcol.lvca-zero-margin, .lvca-sevencol.lvca-zero-margin, .lvca-eightcol.lvca-zero-margin, .lvca-ninecol.lvca-zero-margin, .lvca-tencol.lvca-zero-margin, .lvca-elevencol.lvca-zero-margin {
+    @include omega;
+    }
+
+  @include respond-to-min(768) {
+
+    .lvca-onecol.lvca-zero-margin {
+      width: percentage(1/12);
+      }
+
+    .lvca-twocol.lvca-zero-margin {
+      width: percentage(2/12);
+      }
+
+    .lvca-onefifthcol.lvca-zero-margin {
+      width: percentage(3/15);
+      }
+
+    .lvca-threecol.lvca-zero-margin {
+      width: percentage(3/12);
+      }
+
+    .lvca-fourcol.lvca-zero-margin {
+      width: percentage(4/12);
+      }
+
+    .lvca-fivecol.lvca-zero-margin {
+      width: percentage(5/12);
+      }
+
+    .lvca-sixcol.lvca-zero-margin {
+      width: percentage(6/12);
+      }
+
+    .lvca-sevencol.lvca-zero-margin {
+      width: percentage(7/12);
+      }
+
+    .lvca-eightcol.lvca-zero-margin {
+      width: percentage(8/12);
+      }
+
+    .lvca-ninecol.lvca-zero-margin {
+      width: percentage(9/12);
+      }
+
+    .lvca-tencol.lvca-zero-margin {
+      width: percentage(10/12);
+      }
+
+    .lvca-elevencol.lvca-zero-margin {
+      width: percentage(11/12);
+      }
+    }
+
+  @include respond-between(480, 767) {
+    .lvca-onecol.lvca-zero-margin, .lvca-twocol.lvca-zero-margin, .lvca-onefifthcol.lvca-zero-margin, .lvca-threecol.lvca-zero-margin, .lvca-fourcol.lvca-zero-margin, .lvca-fivecol.lvca-zero-margin, .lvca-sixcol.lvca-zero-margin, .lvca-sevencol.lvca-zero-margin, .lvca-eightcol.lvca-zero-margin, .lvca-ninecol.lvca-zero-margin, .lvca-tencol.lvca-zero-margin, .lvca-elevencol.lvca-zero-margin {
+      width: percentage(6/12);
+      }
+    }
+
+  @include respond-to-max(479) {
+    .lvca-onecol.lvca-zero-margin, .lvca-twocol.lvca-zero-margin, .lvca-onefifthcol.lvca-zero-margin, .lvca-threecol.lvca-zero-margin, .lvca-fourcol.lvca-zero-margin, .lvca-fivecol.lvca-zero-margin, .lvca-sixcol.lvca-zero-margin, .lvca-sevencol.lvca-zero-margin, .lvca-eightcol.lvca-zero-margin, .lvca-ninecol.lvca-zero-margin, .lvca-tencol.lvca-zero-margin, .lvca-elevencol.lvca-zero-margin {
+      width: 100%;
+      }
+    }
+
+  }
+/* --------------- Flexslider Styles -------------- */
+
+.lvca-container {
+  .lvca-flex-direction-nav li {
+    position: initial;
+    }
+  .lvca-flex-direction-nav a, .lvca-flex-direction-nav a:hover {
+    opacity: 1;
+    text-shadow: none;
+    background: none;
+    color: #888;
+    @include lvca-icon-font();
+    font-size: 24px;
+    width: 28px;
+    height: 28px;
+    margin: -14px 0 0;
+    bottom: initial;
+    left: initial;
+    right: initial;
+    top: 50%;
+    text-indent: 0;
+    text-align: center;
+    color: #aaa;
+    @include vendorize(transition, all 0.3s ease-in-out 0s);
+    &:before, &:hover:before {
+      margin: 2px;
+      vertical-align: middle;
+      display: inline;
+      font-family: inherit !important;
+      opacity: 1;
+      }
+    &:hover {
+      color: #888;
+      }
+    .lvca-dark-bg & {
+      color: #888;
+      &:hover {
+        color: #aaa;
+        }
+      }
+    @include respond-to-max(960) {
+      display: none; /* Let users navigate via touch */
+      }
+    }
+  .lvca-flex-direction-nav a.lvca-flex-prev {
+    left: -30px;
+    &:before {
+      content: "\e900";
+      }
+    }
+  .lvca-flex-direction-nav a.lvca-flex-next {
+    right: -30px;
+    &:before {
+      content: "\e901";
+      }
+    }
+  .lvca-flex-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom: -40px;
+    text-align: center;
+    li, li:hover {
+      margin: 0 8px 0 0;
+      padding: 0;
+      border: none;
+      box-shadow: none;
+      }
+    li a, li a:hover {
+      background: #aaa;
+      border: 1px solid #aaa;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      box-shadow: none;
+      @include vendorize(transition, all 0.2s ease-in 0s);
+      display: inline-block;
+      vertical-align: middle;
+
+      .lvca-dark-bg & {
+        background: #ccc;
+        border-color: #ccc;
+        }
+      }
+    li a.lvca-flex-active, li a:hover.lvca-flex-active, li a:hover {
+      background: none;
+      }
+    li a.lvca-flex-active, li a:hover.lvca-flex-active {
+      width: 14px;
+      height: 14px;
+      }
+    }
+  }
+/* Sleek Carousel Styles */
+
+.slick-loading .slick-list {
+  background: #fff url('./ajax-loader.gif') center center no-repeat;
+  }
+.lvca-container {
+
+  button.slick-prev, button.slick-next {
+    position: absolute;
+    opacity: 1;
+    text-shadow: none;
+    background: none !important;
+    border: none;
+    padding: 0;
+    color: #888;
+    @include lvca-icon-font();
+    font-size: 24px;
+    width: 28px;
+    height: 28px;
+    margin: -14px 0 0;
+    bottom: initial;
+    left: initial;
+    right: initial;
+    top: 50%;
+    text-indent: 0;
+    text-align: center;
+    color: #aaa !important;
+    @include vendorize(transition, all 0.3s ease-in-out 0s);
+    overflow: hidden;
+    box-shadow: none;
+    &:before {
+      margin: 2px;
+      vertical-align: middle;
+      }
+    &:hover {
+      color: #888 !important;
+      }
+    .lvca-dark-bg & {
+      color: #888 !important;
+      &:hover {
+        color: #aaa !important;
+        background: none !important;
+        }
+      }
+    @include respond-to-max(1024) {
+      display: none !important; /* Let users navigate via touch */
+      }
+    }
+  button.slick-prev {
+    left: -40px;
+    &:before {
+      content: "\e900";
+      }
+    }
+  button.slick-next {
+    right: -40px;
+    &:before {
+      content: "\e901";
+      }
+    }
+  ul.slick-dots {
+    width: 100%;
+    position: absolute;
+    bottom: -40px;
+    text-align: center;
+    li {
+      margin: 0 8px 0 0;
+      display: inline-block;
+      font-size: 0;
+      }
+    li button {
+      padding: 0;
+      background: #aaa;
+      border: 1px solid #aaa;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      box-shadow: none;
+      @include vendorize(transition, all 0.3s ease-in-out 0s);
+      font-size: 0;
+      .lvca-dark-bg & {
+        background: #888 !important;
+        border-color: #888 !important;
+        }
+      }
+    li button:hover {
+      background: none !important;
+      border-color: #aaa !important;
+      }
+    }
+  }
+/* -------- Widget separator headline ------------ */
+
+.lvca-widget-heading {
+  @include lvca-heading-style();
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  @include respond-to-max(767) {
+    font-size: 32px;
+    line-height: 44px;
+    }
+  }
+/* -------- Spacer styling ----------- */
+
+.lvca-spacer {
+  clear: both;
+  }

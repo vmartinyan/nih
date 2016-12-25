@@ -1,0 +1,107 @@
+
+@import "../../../../assets/css/lvca-lib";
+
+.lvca-heading {
+  text-align: center;
+  margin: 0 auto 60px;
+  @include respond-to-max(767) {
+    margin-bottom: 40px;
+    }
+  .lvca-text {
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 600px;
+    margin: 0 auto;
+    @include respond-to-max(767) {
+      font-size: 15px;
+      line-height: 26px;
+      }
+    }
+  }
+
+.lvca-heading.lvca-style1, .lvca-heading.lvca-style2, .lvca-heading.lvca-style3 {
+  .lvca-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    margin: 0 auto 20px;
+    max-width: 640px;
+    color: #333;
+    font-weight: bold;
+    @include respond-to-max(767) {
+      font-size: 24px;
+      line-height: 32px;
+      }
+    }
+  .lvca-dark-bg  & {
+    .lvca-title {
+      color: #e5e5e5;
+      }
+    .lvca-subtitle {
+      color: #505050;
+      }
+    .lvca-text {
+      color: #909090;
+      }
+    }
+  }
+
+
+
+.lvca-heading.lvca-style2 {
+
+  .lvca-subtitle {
+    margin: 0 auto 5px;
+    max-width: 700px;
+    color: #888;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+    &:before {
+      display: block;
+      content: '_';
+      position: absolute;
+      left: 0;
+      top: -5px;
+      }
+    &:after {
+      display: block;
+      content: '_';
+      position: absolute;
+      right: 0;
+      top: -5px;
+      }
+    @include respond-to-max(767) {
+      font-size: 11px;
+      line-height: 18px;
+      }
+    }
+  }
+
+
+.lvca-heading.lvca-style3 {
+  margin: 0 auto 30px;
+  .lvca-title {
+    font-size: 22px;
+    line-height: 32px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    @include bottom-line(35, 1, #aaa);
+    &:after {
+      margin: 10px auto 20px;
+      .lvca-dark-bg & {
+        background: #909090;
+        }
+      }
+    @include respond-to-max(767) {
+      font-size: 16px;
+      line-height: 24px;
+      }
+    }
+  }
+
