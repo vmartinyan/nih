@@ -1105,4 +1105,6 @@ if(!function_exists('sv_get_header_visual')){
         <?php
     }
 }
+
+
 /***************************************END Theme Function***************************************/

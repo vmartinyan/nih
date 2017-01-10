@@ -12,6 +12,7 @@ load_theme_textdomain( 'news', get_template_directory() . '/languages' );
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
+ 
 if ( ! isset( $content_width ) ) {
 	$content_width = 640; /* pixels */
 }
@@ -44,3 +45,16 @@ require_once( trailingslashit( get_template_directory() ). '/7upframe/controler/
 // END LOAD
 
 require_once( trailingslashit( get_template_directory() ). '/7upframe/index.php' );
+
+//WPGlobus ACF
+add_filter( 'wpglobus_multilingual_meta_keys', 'filter__wpglobus_multilingual_meta_keys' );
+
+ function filter__wpglobus_multilingual_meta_keys( $multilingual_meta_keys ) {
+
+        $multilingual_meta_keys['content1'] = true;
+
+        return $multilingual_meta_keys;
+
+}
+
+ 
