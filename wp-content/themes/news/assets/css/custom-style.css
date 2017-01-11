@@ -3777,8 +3777,10 @@ iframe{
 
 /* Additional styles*/
 .LanguageBar {
-	width:75px;
-	height:30px;
 	float: right;
-    padding: 10px 0 0 10px;
+}
+
+.LanguageBar select {
+	height:40px;
+	border: none;
 }

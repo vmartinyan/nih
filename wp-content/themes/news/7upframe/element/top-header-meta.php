@@ -28,7 +28,7 @@ if(!function_exists('sv_vc_top_meta'))
         ob_start();
             $search_val = get_search_query();
             if(empty($search_val)){
-                $search_val = esc_html__("Search","news");
+                $search_val = esc_html__("[:hy]Որոնել[:en]Search","news");
             }?>
             <form class="event-form-search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
                 <input type="text" name="s" value="<?php echo esc_attr($search_val);?>" onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue">
