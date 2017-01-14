@@ -17,7 +17,7 @@ else{
             <a href="<?php echo esc_url(get_the_permalink());?>"><?php echo balanceTags($data);?></a>
         </div>
     <?php endif;?>
-    <?php sv_author_box_light()?>
+    <?php //sv_author_box_light()?>
 </div>
 <div class="main-content-single2">
     <?php the_content(); ?>

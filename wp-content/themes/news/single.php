@@ -35,7 +35,7 @@ if($sidebar_pos != 'no') $main_class = 'col-md-9 col-sm-8 col-xs-12';
                                 'link_after'  => '</span>',
                             ) );
                         ?>
-                        <div class="single-list-tags">
+                        <!--<div class="single-list-tags">
                             <label> <?php esc_html_e("tags:","news")?></label>
                             <?php
                                 $tags = get_the_tag_list(' ',', ',' ');
@@ -43,21 +43,21 @@ if($sidebar_pos != 'no') $main_class = 'col-md-9 col-sm-8 col-xs-12';
                                 else $tags_html = esc_html__("No Tags","news");
                                 echo balanceTags($tags_html);
                             ?>
-                        </div>
-                        <?php sv_single_related_post_light();?>
+                        </div>-->
+                        <!-- <?php sv_single_related_post_light();?>-->
                         <?php
-                            if ( comments_open() || get_comments_number() ) { comments_template(); }
+                         //   if ( comments_open() || get_comments_number() ) { comments_template(); }
                         ?>
                         <?php
                             $previous_post = get_previous_post();
                             $next_post = get_next_post();
-                        ?>
+                        ?> 
                         <div class="post-control2">
                             <?php if(!empty( $previous_post )):?>
-                                <a href="<?php echo esc_url(get_the_permalink( $previous_post->ID )); ?>" class="prev-post"><span class="lnr lnr-arrow-left"></span> <span class="control-post-text"><?php esc_html_e("prev post","news")?></span></a>
+                                <a href="<?php echo esc_url(get_the_permalink( $previous_post->ID )); ?>" class="prev-post"><span class="lnr lnr-arrow-left"></span> <span class="control-post-text"><?php esc_html_e("[:hy]Նախորդ[:][:en]prev post[:]","news")?></span></a>
                             <?php endif;?>
                             <?php if(!empty( $next_post )):?>
-                                <a href="<?php echo esc_url(get_the_permalink( $next_post->ID )); ?>" class="next-post"><span class="control-post-text"><?php esc_html_e("next post","news")?></span> <span class="lnr lnr-arrow-right"></span></a>
+                                <a href="<?php echo esc_url(get_the_permalink( $next_post->ID )); ?>" class="next-post"><span class="control-post-text"><?php esc_html_e("[:hy]Հաջորդ[:][:en]next post[:]","news")?></span> <span class="lnr lnr-arrow-right"></span></a>
                             <?php endif;?>
                         </div>
                     <?php endwhile; ?>
