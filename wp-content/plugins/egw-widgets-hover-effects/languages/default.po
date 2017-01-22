@@ -1,0 +1,114 @@
+# Copyright (C) 2014 EGW Hover Effects
+msgid ""
+msgstr ""
+"Project-Id-Version:EGW Hover Effects 3.0.4\n"
+"Report-Msgid-Bugs-To: "
+"http://scriptsell.net/egw-hover-effects\n"
+"POT-Creation-Date: 2014-05-08 05:54:01+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: egw <proscriptsell@gmail.com>\n"
+
+
+#:  ../egw-hover-effects-widget.php:39
+msgid "Insert Media"
+msgstr ""
+#:  ../egw-hover-effects-widget.php:40
+msgid "Return to Library"
+msgstr ""
+#:  ../egw-hover-effects-widget.php:41
+msgid "Select Image"
+msgstr ""
+#:  ../egw-hover-effects-widget.php:42
+msgid "Insert Image"
+msgstr ""
+#:  ../egw-hover-effects-widget.php:74
+msgid "A simple widget that makes it a breeze to add images,Content, And CSS3 Hover Animation to your sidebars."
+msgstr ""
+#:  ../egw-hover-effects-widget.php:75
+msgid "EGW Hover Effects"
+msgstr ""
+#:  ../egw-hover-effects-widget.php:111
+msgid "read more"
+msgstr ""
+#:  ../egw-hover-effects-widget.php:125
+msgid "Image Zoom"
+msgstr ""
+#:  ../egw-hover-effects-widget.php:126
+msgid "Layer-Slide"
+msgstr ""
+#:  ../egw-hover-effects-widget.php:127
+msgid "Rotate Zoom Out"
+msgstr ""
+#:  ../egw-hover-effects-widget.php:128
+msgid "Image and Layer Slide Right"
+msgstr ""
+#:  ../egw-hover-effects-widget.php:129
+msgid "Image and Layer Slide left"
+msgstr ""
+#:  ../egw-hover-effects-widget.php:130
+msgid "Layer Zoom In"
+msgstr ""
+#:  ../egw-hover-effects-widget.php:131
+msgid "Image Rotate Out"
+msgstr ""
+#:  ../egw-hover-effects-widget.php:132
+msgid "Layer-Slide Top"
+msgstr ""
+#:  ../egw-hover-effects-widget.php:133
+msgid "Layer Zoom Out outside"
+msgstr ""
+
+
+#:  ../includes/back-end.php:13
+msgid "Choose an Image"
+msgstr ""
+#:  ../includes/back-end.php:21
+msgid "Remove image"
+msgstr ""
+#:  ../includes/back-end.php:21
+msgid "Remove image"
+msgstr ""
+#:  ../includes/back-end.php:21
+msgid "Remove image"
+msgstr ""
+#:  ../includes/back-end.php:21
+msgid "Remove image"
+msgstr ""
+#:  ../includes/back-end.php:21
+msgid "Remove image"
+msgstr ""
+#:  ../includes/back-end.php:21
+msgid "Remove image"
+msgstr ""
+#:  ../includes/back-end.php:31
+msgid "Title"
+msgstr ""
+#:  ../includes/back-end.php:40
+msgid "Text"
+msgstr ""
+#:  ../includes/back-end.php:46
+msgid "Link"
+msgstr ""
+#:  ../includes/back-end.php:56
+msgid "Open in new window?"
+msgstr ""
+#:  ../includes/back-end.php:59
+msgid "Hover effects"
+msgstr ""
+#:  ../includes/back-end.php:79
+msgid "Hover background color"
+msgstr ""
+#:  ../includes/back-end.php:97
+msgid "Read More Text"
+msgstr ""
+#:  ../includes/back-end.php:105
+msgid "Read more background color:"
+msgstr ""
+
+
+#~ msgid "EGW Hover Effects"
+#~ msgstr ""
