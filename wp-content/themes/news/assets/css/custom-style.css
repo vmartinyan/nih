@@ -2213,7 +2213,7 @@ body .item-full-top{
     margin-right: 7px;
 }
 .item-top-post .post-title{
-    height: 44px;
+    /* height: 44px; */
     overflow: hidden;
 }
 .light .single-leading{

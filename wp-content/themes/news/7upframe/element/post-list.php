@@ -566,12 +566,12 @@ if(!function_exists('sv_post_loop_content'))
                                         </a>
                                     </div>
                                     <div class="post-info fix-height">
-                                        <div class="post-format">
+                                        <!--<div class="post-format">
                                             '.$term_html.'
-                                        </div>
-                                        <h3 class="post-title"><a href="'.esc_url(get_the_permalink()).'">'.get_the_title().'</a></h3>
+                                        </div>-->
+                                        <h4 class="post-title"><a href="'.esc_url(get_the_permalink()).'">'.get_the_title().'</a></h4>
                                         <p class="desc">'.get_the_excerpt().'</p>
-                                        <a class="btn-view-all hide-icon" href="'.esc_url(get_the_permalink()).'"><span class="view-all-text" data-hover="'.esc_attr__("Read More","news").'">'.esc_html__("Read More","news").'</span> </a>
+                                        <!--<a class="btn-view-all hide-icon" href="'.esc_url(get_the_permalink()).'"><span class="view-all-text" data-hover="'.esc_attr__("Read More","news").'">'.esc_html__("Read More","news").'</span> </a>-->
                                     </div>
                                 </div>
                             </div>';
