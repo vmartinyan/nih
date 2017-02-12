@@ -5,6 +5,8 @@
     max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
+    clear: both;
     }
   .lvca-heading {
     @include lvca-heading-style();
@@ -127,8 +129,8 @@
           h3 {
             padding: 10px;
             margin: 0;
-            font-size: 24px;
-            line-height: 36px;
+            font-size: 18px;
+            line-height: 28px;
             font-weight: 400;
             color: #fff;
             @include respond-to-max(1024) {
@@ -141,7 +143,7 @@
               @include lvca-transition(all, 0.3s);
               border-bottom: 1px solid transparent;
               &:hover {
-                border-bottom: 2px solid #ccc;
+                border-bottom: 1px solid #ccc;
                 }
               }
             }
@@ -189,8 +191,6 @@
           display: none;
           }
         a {
-          font-size: 18px;
-          line-height: 26px;
           @include lvca-transition();
           color: #333;
           &:hover {

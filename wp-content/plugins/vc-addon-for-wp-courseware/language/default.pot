@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Visual Composer Addon for WP Courseware 1.0\n"
-"POT-Creation-Date: 2016-11-21 10:26-0700\n"
+"POT-Creation-Date: 2017-02-01 12:32-0700\n"
 "PO-Revision-Date: 2016-02-11 22:33-0700\n"
 "Language-Team: Fly Plugins\n"
 "Language: en_US\n"

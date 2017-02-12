@@ -4,8 +4,8 @@ Plugin URI: http://portfoliotheme.org/visual-composer-addons
 Contributors: livemesh
 Tags: visual composer, visual composer addons, vc addons, visual composer extensions, vc extensions, page builder, portfolio, carousel, Post, posts, shortcode, tabs, admin, plugin, page
 Requires at least: 4.1
-Tested up to: 4.6
-Stable Tag: 1.3
+Tested up to: 4.7
+Stable Tag: 1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html-func
 
@@ -81,6 +81,13 @@ Pls install and activate Jetpack plugin, activate the Custom Post Types module a
 3. Editing a addon/extension element in the Visual Composer Page Builder.
 
 == Changelog ==
+
+= 1.4 =
+* Added - Left, right and center alignment option to the heading element
+* Added - Styling for services when font icons are chosen instead of image icons
+* Fixed - The testimonials slider content not aligned to the center
+* Fixed - The tab title width was fixed with no wrapping
+* Updated - The isotope and imagesloaded JS libraries.
 
 = 1.3 =
 * Fixed - Check for page id when displaying posts/pages in a grid to avoid infinite loop

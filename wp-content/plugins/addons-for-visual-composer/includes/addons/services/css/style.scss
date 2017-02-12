@@ -6,8 +6,10 @@
     .lvca-icon-wrapper span {
       display: block;
       text-align: center;
-      font-size: 34px;
-      margin: 0 auto 20px;
+      font-size: 96px;
+      line-height: 1;
+      margin-bottom: 20px;
+      color: #aaa;
     }
     .lvca-image-wrapper img {
       display: block;
@@ -127,6 +129,9 @@
 .lvca-services {
   .lvca-service {
     margin-bottom: 50px;
+    .lvca-icon-wrapper span {
+      @include lvca-transition(color);
+      }
     .lvca-service-text {
       font-size: 15px;
       line-height: 24px;

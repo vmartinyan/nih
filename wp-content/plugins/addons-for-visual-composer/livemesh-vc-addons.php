@@ -7,7 +7,7 @@
  * Author URI: http://portfoliotheme.org/
  * License: GPL3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.txt
- * Version: 1.3
+ * Version: 1.4
  * Text Domain: livemesh-vc-addons
  * Domain Path: languages
  *
@@ -97,7 +97,7 @@ if (!class_exists('Livemesh_VC_Addons')) :
 
             // Plugin version
             if (!defined('LVCA_VERSION')) {
-                define('LVCA_VERSION', '1.3');
+                define('LVCA_VERSION', '1.4');
             }
 
             // Plugin Folder Path

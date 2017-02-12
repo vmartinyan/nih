@@ -3,7 +3,7 @@
  * Plugin Name: Visual Composer Addon for WP Courseware
  * Plugin URI:  flyplugins.com
  * Description: Plugin adds course unit conent element to Visual Composer
- * Version:     1.6
+ * Version:     1.7
  * Author:      Fly Plugins
  * Author URI:  flyplugins.com
  */
@@ -148,7 +148,7 @@ class WPCW_VC_Integration
             return $fe->message_user_hasNotCompletedCoursePrerequisites() . $navigationBox;
         }
 
-        add_shortcode('wpcourse_unit', array($this, 'WPCWrenderUnitProgressBox'));
+        add_shortcode('wpcourse_unit', array('WPCW_VC_Integration', 'WPCWrenderUnitProgressBox'));
         return $content;
 
     }

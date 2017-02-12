@@ -8,8 +8,10 @@ html {
 .lvca-services.lvca-style1 .lvca-service .lvca-icon-wrapper span {
   display: block;
   text-align: center;
-  font-size: 34px;
-  margin: 0 auto 20px; }
+  font-size: 96px;
+  line-height: 1;
+  margin-bottom: 20px;
+  color: #aaa; }
 .lvca-services.lvca-style1 .lvca-service .lvca-image-wrapper img {
   display: block;
   max-width: 100%;
@@ -135,6 +137,11 @@ html {
 /* -------- General services -------- */
 .lvca-services .lvca-service {
   margin-bottom: 50px; }
+  .lvca-services .lvca-service .lvca-icon-wrapper span {
+    -webkit-transition: color 0.4s ease-in-out 0s;
+    -moz-transition: color 0.4s ease-in-out 0s;
+    -ms-transition: color 0.4s ease-in-out 0s;
+    transition: color 0.4s ease-in-out 0s; }
   .lvca-services .lvca-service .lvca-service-text {
     font-size: 15px;
     line-height: 24px; }

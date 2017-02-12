@@ -24,7 +24,7 @@ $theme_color: #f94213;
       a {
         display: block;
         text-overflow: ellipsis;
-        white-space: nowrap;
+        white-space: normal;
         padding: 20px 40px;
         text-decoration: none;
         border: none;
@@ -296,7 +296,7 @@ $theme_color: #f94213;
     .lvca-tab-pane {
       color: #666;
       h1, h2, h3, h4, h5, h6 {
-        color: #333;
+        color: #333333;
         }
       }
     }

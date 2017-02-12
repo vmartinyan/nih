@@ -2,8 +2,8 @@
 Contributors: flyplugins
 Tags: fly plugins,visual composer,wp courseware,wpcourseware,lms,lms for wordpress,learning management system,online course,ecourse,flyplugins,wordpress learning management system
 Requires at least: 4.0
-Tested up to: 4.6.1
-Stable tag: 1.6
+Tested up to: 4.7.2
+Stable tag: 1.7
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -56,6 +56,9 @@ Click here to get [Visual Composer](https://vc.wpbakery.com/).
 1. A WP Courseware unit content element is available when adding an element with Visual Composer.
 
 == Changelog ==
+
+= 1.7 =
+* Fix: Fixed call back issue with wpcourse_unit shortcode
 
 = 1.6 =
 * Fix: Fixed issue where viewing a non-assigned unit would cause an error

@@ -35,6 +35,7 @@ class LVCA_Heading {
         extract(shortcode_atts(array(
 
             'style' => 'style1',
+            'align' => 'center',
             'heading' => '',
             'subtitle' => false,
             'short_text' => false
@@ -45,7 +46,7 @@ class LVCA_Heading {
 
         ?>
 
-        <div class="lvca-heading lvca-<?php echo $style; ?>">
+        <div class="lvca-heading lvca-<?php echo $style; ?> lvca-align<?php echo $align; ?>">
 
             <?php if ($style == 'style2' && !empty($subtitle)): ?>
 
@@ -95,6 +96,18 @@ class LVCA_Heading {
                             __('Style 3', 'livemesh-vc-addons') => 'style3',
                         ),
                         'std' => 'style1',
+                    ),
+                    array(
+                        "type" => "dropdown",
+                        "param_name" => "align",
+                        "heading" => __("Align", "livemesh-vc-addons"),
+                        "description" => __("Alignment of the heading", "livemesh-vc-addons"),
+                        'value' => array(
+                            __('Center', 'livemesh-vc-addons') => 'center',
+                            __('Left', 'livemesh-vc-addons') => 'left',
+                            __('Right', 'livemesh-vc-addons') => 'right',
+                        ),
+                        'std' => 'center',
                     ),
                     array(
                         'type' => 'textfield',

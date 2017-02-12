@@ -7,7 +7,9 @@ html {
 .lvca-portfolio-wrap .lvca-portfolio-header {
   max-width: 1140px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  overflow: hidden;
+  clear: both; }
 .lvca-portfolio-wrap .lvca-heading {
   font-size: 18px;
   line-height: 26px;
@@ -135,8 +137,8 @@ html {
       .lvca-portfolio-wrap .lvca-portfolio .lvca-portfolio-item .lvca-project-image .lvca-image-info h3 {
         padding: 10px;
         margin: 0;
-        font-size: 24px;
-        line-height: 36px;
+        font-size: 18px;
+        line-height: 28px;
         font-weight: 400;
         color: #fff; }
         @media only screen and (max-width: 1024px) {
@@ -152,7 +154,7 @@ html {
           transition: all 0.3s ease-in-out 0s;
           border-bottom: 1px solid transparent; }
           .lvca-portfolio-wrap .lvca-portfolio .lvca-portfolio-item .lvca-project-image .lvca-image-info h3 a:hover {
-            border-bottom: 2px solid #ccc; }
+            border-bottom: 1px solid #ccc; }
       .lvca-portfolio-wrap .lvca-portfolio .lvca-portfolio-item .lvca-project-image .lvca-image-info .lvca-terms {
         display: block;
         color: #f9f9f9; }
@@ -188,8 +190,6 @@ html {
     .lvca-portfolio-wrap .lvca-portfolio .lvca-portfolio-item .entry-title:after, .lvca-portfolio-wrap .lvca-portfolio .lvca-portfolio-item .entry-title:before {
       display: none; }
     .lvca-portfolio-wrap .lvca-portfolio .lvca-portfolio-item .entry-title a {
-      font-size: 18px;
-      line-height: 26px;
       -webkit-transition: all 0.4s ease-in-out 0s;
       -moz-transition: all 0.4s ease-in-out 0s;
       -ms-transition: all 0.4s ease-in-out 0s;

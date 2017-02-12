@@ -7,15 +7,15 @@ jQuery(function ($) {
     var custom_css = '';
     $('.lvca-portfolio-wrap').each(function () {
 
+        // layout Isotope after all images have loaded
         var html_content = $(this).find('.js-isotope');
-        // layout Isotope again after all images have loaded
         html_content.imagesLoaded(function () {
             html_content.isotope('layout');
         });
 
         var container = $(this).find('.lvca-portfolio');
         if (container.length === 0) {
-            return;
+            return; // no items to filter or load and hence don't continue
         }
 
         $(this).find('.lvca-taxonomy-filter .lvca-filter-item a').on('click', function (e) {

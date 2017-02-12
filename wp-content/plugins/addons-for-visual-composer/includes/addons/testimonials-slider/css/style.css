@@ -7,7 +7,8 @@ html {
 .lvca-testimonials-slider {
   position: relative; }
   .lvca-testimonials-slider.lvca-container {
-    max-width: 900px; }
+    max-width: 900px;
+    margin: 0 auto; }
   .lvca-testimonials-slider .lvca-testimonial-text {
     text-align: center;
     max-width: 750px;

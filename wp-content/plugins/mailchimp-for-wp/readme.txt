@@ -3,8 +3,8 @@ Contributors: Ibericode, DvanKooten, hchouhan, lapzor
 Donate link: https://mc4wp.com/#utm_source=wp-plugin-repo&utm_medium=mailchimp-for-wp&utm_campaign=donate-link
 Tags: mailchimp, mc4wp, email, marketing, newsletter, subscribe, widget, mc4wp, contact form 7, woocommerce, buddypress, ibericode, mailchimp forms, mailchimp integrations
 Requires at least: 4.1
-Tested up to: 4.7
-Stable tag: 4.0.11
+Tested up to: 4.7.2
+Stable tag: 4.0.13
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -178,6 +178,10 @@ The plugin is translated using Transifex. If you want to help out, please head o
 
 MailChimp for WordPress is being developed on GitHub. If you want to collaborate, please look at [ibericode/mailchimp-for-wordpress](https://github.com/ibericode/mailchimp-for-wordpress).
 
+#### Customizing the plugin
+
+MailChimp for WordPress comes with many filter & action hooks which allow you to modify the default plugin behavior. We're also maintaining a [collection of common code snippets for MailChimp for WordPress](https://github.com/ibericode/mc4wp-snippets).
+
 == Screenshots ==
 
 1. A static sign-up form in the sidebar of the Twenty Fifteen theme.
@@ -188,6 +192,35 @@ MailChimp for WordPress is being developed on GitHub. If you want to collaborate
 6. Detailed statistics on which methods are generating the most subscribers. **(Pro Feature)**
 
 == Changelog == 
+
+
+#### 4.0.13 - February 8, 2017
+
+**Improvements**
+
+- Ensure fields are HTML decoded before sending to MailChimp.
+- Better OptimizePress compatibility.
+- Show all address-type fields as required when form contains 1 or more fields of the same address group.
+
+
+#### 4.0.12 - January 16, 2017
+
+**Fixes**
+
+- Don't call `stripslashes` on POST data twice.
+
+**Improvements**
+
+- Plugin review notice is now dismissible over AJAX.
+- Improved formatting of birthday fields.
+- Updated Polish translations, thanks to Mateusz Lomber.
+- Updated German translations, thanks to Sven de Vries.
+
+**Additions**
+
+- Add `update_ecommerce_store_product` method to API class.
+- Throw form specific JavaScript events, like `15.subscribed` to hook into "subscribed" events for form with ID 15.
+
 
 #### 4.0.11 - December 9, 2016
 

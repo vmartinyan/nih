@@ -39,7 +39,7 @@ html {
       .lvca-tabs .lvca-tab-nav .lvca-tab a {
         display: block;
         text-overflow: ellipsis;
-        white-space: nowrap;
+        white-space: normal;
         padding: 20px 40px;
         text-decoration: none;
         border: none;
@@ -269,7 +269,7 @@ html {
   .lvca-dark-bg .lvca-tabs.lvca-style2 .lvca-tab-panes .lvca-tab-pane {
     color: #666; }
     .lvca-dark-bg .lvca-tabs.lvca-style2 .lvca-tab-panes .lvca-tab-pane h1, .lvca-dark-bg .lvca-tabs.lvca-style2 .lvca-tab-panes .lvca-tab-pane h2, .lvca-dark-bg .lvca-tabs.lvca-style2 .lvca-tab-panes .lvca-tab-pane h3, .lvca-dark-bg .lvca-tabs.lvca-style2 .lvca-tab-panes .lvca-tab-pane h4, .lvca-dark-bg .lvca-tabs.lvca-style2 .lvca-tab-panes .lvca-tab-pane h5, .lvca-dark-bg .lvca-tabs.lvca-style2 .lvca-tab-panes .lvca-tab-pane h6 {
-      color: #333; }
+      color: #333333; }
 
 /* -------- Style 3 ----------- */
 .lvca-tabs.lvca-style3 .lvca-tab-nav {
@@ -502,7 +502,7 @@ html {
 .lvca-tabs.lvca-style7 .lvca-tab-nav .lvca-tab {
   padding: 0 25px 0 0; }
   .lvca-tabs.lvca-style7 .lvca-tab-nav .lvca-tab a {
-    max-width: 180px;
+    max-width: none;
     margin: 6px 0; }
     @media only screen and (max-width: 479px) {
       .lvca-tabs.lvca-style7 .lvca-tab-nav .lvca-tab a {
